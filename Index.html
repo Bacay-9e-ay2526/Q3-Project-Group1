@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q3 Seatwork 2</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest    compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <body>
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <main class="container-fluid">
+            <div class="container bg-dark text-light">
+            <h1 class="text-center bg-dark text-warning p-2 rounded">Grand Union Fare Matrix</h1><br>
+            <h2>Pick Up Location</h2>
+            <select id="pickup" class="form-control">
+            <option value="1">Santolan</option>
+            <option value="2">Katipunan</option>
+            <option value="3">Anonas</option>
+            <option value="4">Araneta Center-Cubao</option>
+            <option value="5">Betty Go-Belmonte</option>
+            <option value="6">Gilmore</option>
+            <option value="7">J. Ruiz</option>
+            <option value="8">V. Mapa</option>
+            <option value="9">Pureza</option>
+            <option value="10">Legarda</option>
+            <option value="11">Recto</option>
+            </select>
+
+            <br>
+
+            <h3>Drop Off Location</h3>
+            <select id="dropoff" class="form-control">
+            <option value="1">Santolan</option>
+            <option value="2">Katipunan</option>
+            <option value="3">Anonas</option>
+            <option value="4">Araneta Center-Cubao</option>
+            <option value="5">Betty Go-Belmonte</option>
+            <option value="6">Gilmore</option>
+            <option value="7">J. Ruiz</option>
+            <option value="8">V. Mapa</option>
+            <option value="9">Pureza</option>
+            <option value="10">Legarda</option>
+            <option value="11">Recto</option>
+            </select>
+
+         <div class=" justify-content-center d-flex mt-3">
+            <button class="btn btn-primary mt-3" onclick="regularFare()">Regular Fare</button>
+           <div id="kfc"></div>
+           <button class="btn btn-primary mt-3" onclick="discountFare()">Discounted Fare</button>
+           <div id="capas"></div>
+        </div>
+        <br>
+
+        <h2 id="fareDisplay">Fare: </h2>
+    </div>
+
+        </main>
+
+        <footer>
+            <small>&copy;2026 PC Tech Solutions. All rights revserved</small>
+        </footer>
+            <script src="main.js">
+            </script>
+    </body>
+    </html> 
