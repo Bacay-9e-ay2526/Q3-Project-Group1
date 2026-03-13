@@ -1,13 +1,96 @@
-
-.container{
-    padding: 3%;
-    text-align: center;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center
+body {
+    background-image: url("Thank You.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-bottom: 90px;
 }
 
-    footer {
+.navbar {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.container {
+    padding: 30px;
+    text-align: center;
+    border-radius: 18px;
+    background-color: rgba(255,247,28,0.75);
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+#look {
+    text-align: center;
+    border-radius: 20px;
+    padding: 35px;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(255,247,28,0.75);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.bg-dark.text-light {
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn-warning:hover {
+    transform: translateY(-2px);
+}
+
+input, select {
+    border-radius: 8px !important;
+    border: 1px solid #ccc;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 5px rgba(0,123,255,0.6);
+    border-color: #007bff;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -15,4 +98,27 @@
     background-color: black;
     color: white;
     text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.4);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 85%;
     }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
